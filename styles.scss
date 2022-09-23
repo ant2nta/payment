@@ -90,6 +90,7 @@ input, select {
 
   &__tooltip {
     height: 18px;
+    cursor: pointer;
   }
 
   &__name {
@@ -107,6 +108,7 @@ input, select {
 
     &__tooltip {
       position: absolute;
+      cursor: pointer;
       right: 12px;
       top: 24px;
     }
@@ -157,6 +159,7 @@ input, select {
       position: absolute;
       right: 8px;
       top: 14px;
+      cursor: pointer;
     }
   }
 
