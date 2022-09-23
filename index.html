@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Task</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./index.js" defer></script>
+  </head>
+
+  <body>
+    <div>
+      <header class="header">
+        <div class="header__content">
+          <a href="/fixpix">
+            <img src="./images/logo.png" alt="site logo" class="header__logo">
+          </a>
+    
+          <div class="header__options">
+            <img src="./images/eng.png" alt="english">
+            <img src="./images/usd.png" alt="usd">
+          </div>
+        </div>
+      </header>
+
+      <div class="main">
+        <div class="form">
+          <div class="form__header">
+            <p class="form__title">Billing information</p>
+
+            <img src="./images/tooltip.png" alt="tooltip" class="form__tooltip">
+          </div>
+
+          <div class="form__name">
+            <input type="text" class="form__input" placeholder="First name *">
+
+            <input type="text" class="form__input" placeholder="Last name *">
+          </div>
+
+          <input type="text" class="form__email" placeholder="E-mail *">
+
+          <select class="form__country"></select>
+
+          <div class="form__phoneblock">
+            <input type="text" class="form__input" placeholder="Phone number">
+            <img src="./images/tooltip.png" alt="tooltip" class="form__phoneblock__tooltip">
+          </div>
+          
+          <div class="form__cardinfo">
+            <div class="form__visa">
+              <img src="./images/visa.png" alt="visa card">
+            </div>
+
+            <div class="form__paypal">
+              <img src="./images/paypal.png" alt="paypal card">
+            </div>
+          </div>
+
+          <div class="form__card-main">
+            <input type="text" class="form__card-number" placeholder="Card number *">
+
+            <div class="form__card">
+              <div class="form__flex">
+                <select class="form__month"></select>
+
+                <select class="form__year"></select>
+              
+                <div class="form__sec">
+                  <input
+                    type="text"
+                    placeholder="Security code *"
+                    maxlength="3"
+                    class=""
+                  >
+
+                  <img src="./images/tooltip.png" alt="tooltip" class="form__sec__tooltip">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form__submit">Submit order</div>
+        </div>
+
+        <div class="info">
+          <div class="info__header">
+            <p>product</p>
+
+            <p>price</p>
+          </div>
+
+          <hr>
+
+          <div class="info__product product">
+            <div class="product__block">
+              <img src="./images/product.png" alt="product image">
+
+              <div class="product__info">
+                <p class="product__title">Test Product</p>
+
+                <p class="product__desk">Product description</p>
+
+                <p class="product__link">Auto-renewal</p>
+              </div>
+            </div>
+
+            <p class="product__price">100.00  USD</p>
+          </div>
+
+          <hr>
+
+          <div class="info__vat">
+            <img src="./images/tooltip.png" alt="tooltip" class="form__tooltip">
+
+            <p>VAT (20.00%): 20.00 USD</p>
+          </div>
+
+          <hr>
+
+          <div class="info__price">TOTAL: 120.00 USD</div>
+
+          <div class="info__text">
+            <p>
+              Do not hesitate to contact our CUSTOMER CARE CENTER for more information about payment and delivery.<br>
+              Please state the order ID from the confirmation email as a reference so that we can assist you efficiently.
+            </p>
+
+            <p>24/7 English phone support for online payment related issues:</p>
+
+            <div class="info__phone">
+              <img src="./images/24.png" alt="phone image">
+
+              <p>
+                <span style="font-weight: bold">+ 1-888-317-4868</span> (Toll free)<br>
+                <span style="font-weight: bold">+ 1-647-977-7769</span> (International)
+              </p>
+            </div>
+
+            <p>
+              By submitting your Order, you acknowledge that you are purchasing from PayPro Global (PayPro Global, Inc., PayPro Europe Limited or PayPro U.S. Inc.), an authorized e-Commerce reseller.
+            </p>
+
+            <p>Once the transaction is complete, your contact information will be shared with the product vendor for ongoing support purposes.</p>
+          </div>
+
+          <div class="info__sertificates">
+            <img src="./images/pcidss.png" alt="sertificate image">
+            <img src="./images/trustedsite.png" alt="sertificate image">
+            <img src="./images/norton.png" alt="sertificate image">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p class="footer__nav">Privacy Policy | Terms and Conditions | Refund Policy</p>
+
+      <p class="footer__title">© PayPro Global, Inc. 2021</p>
+    </footer>
+  </body>
+</html>

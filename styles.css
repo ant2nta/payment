@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,400&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body, html, h1, h2, h3,
+p, ul, li, input, button,
+form, select, hr {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+input:focus-visible, select:focus-visible {
+  outline: none;
+}
+
+.header {
+  background-color: #FFFEF2;
+  margin-bottom: 34px;
+  padding: 8px 0;
+}
+.header__content {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+}
+.header__options {
+  display: flex;
+  gap: 10px;
+}
+@media (max-width: 440px) {
+  .header__options {
+    display: none;
+  }
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 1140px;
+  display: flex;
+  gap: 22px;
+}
+@media (max-width: 785px) {
+  .main {
+    flex-direction: column;
+    padding: 0 40px;
+  }
+}
+
+.form {
+  width: 50%;
+  box-shadow: 0px 4px 10px 3px #E5E9ED;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 785px) {
+  .form {
+    width: 100%;
+  }
+}
+.form input, .form select {
+  border: 1px solid #D0DAE4;
+  border-radius: 3px;
+  padding: 14px 12px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.form__header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.form__title {
+  font-weight: bold;
+  font-size: 20px;
+}
+.form__tooltip {
+  height: 18px;
+}
+.form__name {
+  display: flex;
+  gap: 16px;
+}
+.form__input {
+  width: 100%;
+}
+.form__phoneblock {
+  position: relative;
+  width: 100%;
+}
+.form__phoneblock__tooltip {
+  position: absolute;
+  right: 12px;
+  top: 24px;
+}
+.form__cardinfo {
+  margin-top: 10px;
+  display: flex;
+  gap: 14px;
+}
+.form__visa, .form__paypal {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #D0DAE4;
+  padding: 8px 0;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  cursor: pointer;
+  height: 36px;
+}
+.form__visa {
+  background-color: #e9f0fc;
+  border-bottom: none;
+  padding: 10px 0;
+}
+.form__card-main {
+  background-color: #e9f0fc;
+  padding: 10px;
+  border: 1px solid #E1E1E1;
+  border-top: none;
+}
+.form__card-main input, .form__card-main select {
+  margin: 0;
+  width: 100%;
+}
+.form__sec {
+  width: 100%;
+  position: relative;
+}
+.form__sec__tooltip {
+  position: absolute;
+  right: 8px;
+  top: 14px;
+}
+.form__flex {
+  display: flex;
+  gap: 16px;
+  margin-top: 10px;
+}
+.form__submit {
+  margin-top: 25px;
+  width: 100%;
+  background-color: #FFC107;
+  text-align: center;
+  padding: 21px;
+  font-size: 18px;
+  border-radius: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.form__submit:hover {
+  background-color: #F7CC51;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-right: 6px;
+}
+@media (max-width: 785px) {
+  .info {
+    width: 100%;
+  }
+}
+.info__header {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  color: #9FA7AB;
+  font-weight: 700;
+  font-size: 9px;
+}
+.info hr {
+  background-color: #CDD8DD;
+  border: none;
+  height: 1px;
+  margin: 6px 0 10px;
+}
+.info__vat {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+  gap: 6px;
+}
+.info__price {
+  display: flex;
+  justify-content: flex-end;
+  color: #80C600;
+  font-weight: 500;
+}
+.info__text {
+  margin-top: 18px;
+  font-size: 13px;
+  color: #666C70;
+  line-height: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.info__phone {
+  display: flex;
+  gap: 8px;
+}
+.info__sertificates {
+  margin-top: 44px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+@media (max-width: 440px) {
+  .info__sertificates {
+    padding-top: 20px;
+    margin: 0 auto;
+    flex-direction: column;
+    max-width: 120px;
+  }
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+}
+.product__block {
+  display: flex;
+}
+.product__block img {
+  width: 50px;
+}
+.product__info {
+  margin-left: 20px;
+}
+.product__title, .product__price {
+  font-weight: bold;
+}
+.product__desk {
+  margin-top: 3px;
+  font-size: 13px;
+  color: #666C70;
+}
+.product__link {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #2F76F6;
+}
+
+.footer {
+  font-size: 13px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  max-width: 1140px;
+  color: #666C70;
+  padding: 18px;
+}
+
+/*# sourceMappingURL=styles.css.map */
